@@ -1,0 +1,100 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+            <sys:String x:Key="L_AppTitle">DailyBudget</sys:String>
+    <sys:String x:Key="L_Subtitle">Gestão Financeira Profissional</sys:String>
+    <sys:String x:Key="L_Login">INICIAR SESSÃO</sys:String>
+    <sys:String x:Key="L_Email">Email do Utilizador</sys:String>
+    <sys:String x:Key="L_Password">Palavra-passe</sys:String>
+    <sys:String x:Key="L_NoAccount">Ainda não tem conta?</sys:String>
+    <sys:String x:Key="L_RegisterLink">Registe-se</sys:String>
+    <sys:String x:Key="L_CreateAccount">Criar Conta</sys:String>
+    <sys:String x:Key="L_FullName">Nome Completo</sys:String>
+    <sys:String x:Key="L_ConfirmPassword">Confirmar Palavra-passe</sys:String>
+    <sys:String x:Key="L_RegisterAction">REGISTAR CONTA</sys:String>
+    <sys:String x:Key="L_AlreadyAccount">Já tem conta?</sys:String>
+    <sys:String x:Key="L_LoginLink">Fazer Login</sys:String>
+    <sys:String x:Key="L_AlreadyHaveAccount">Já tem uma conta?</sys:String>
+            <sys:String x:Key="L_Dashboard">📊 Overview</sys:String>
+    <sys:String x:Key="L_Incomes">➕ Receitas</sys:String>
+    <sys:String x:Key="L_Expenses">➖ Despesas</sys:String>
+    <sys:String x:Key="L_Categories">🏷️ Categorias</sys:String>
+    <sys:String x:Key="L_Wishlist">🎯 Desejos</sys:String>
+    <sys:String x:Key="L_Reports">📂 Relatórios</sys:String>
+    <sys:String x:Key="L_Settings">⚙️ Definições</sys:String>
+    <sys:String x:Key="L_Logout">⬅ Logout</sys:String>
+    <sys:String x:Key="L_PremiumMember">Membro Premium</sys:String>
+            <sys:String x:Key="L_Welcome">Olá, Bem-vindo!</sys:String>
+    <sys:String x:Key="L_TotalBalance">Saldo Total</sys:String>
+    <sys:String x:Key="L_RecentActivity">Atividade Recente</sys:String>
+    <sys:String x:Key="L_DashboardTitle">Visão Geral</sys:String>
+    <sys:String x:Key="L_DashboardSubtitle">Resumo financeiro atualizado</sys:String>
+    <sys:String x:Key="L_AvailableBalance">SALDO DISPONÍVEL</sys:String>
+    <sys:String x:Key="L_TotalIncomes">TOTAL RECEITAS</sys:String>
+    <sys:String x:Key="L_TotalExpenses">TOTAL DESPESAS</sys:String>
+    <sys:String x:Key="L_SpendingAnalysis">Análise de Balanço Acumulado</sys:String>
+    <sys:String x:Key="L_TransactionHistory">Histórico de Transações</sys:String>
+            <sys:String x:Key="L_FinancialIntelligence">Relatórios Financeiros</sys:String>
+    <sys:String x:Key="L_IntelligenceDesc">Monitorização rigorosa do fluxo de caixa e balanços periódicos</sys:String>
+    <sys:String x:Key="L_ExportData">EXPORTAR DADOS</sys:String>
+    <sys:String x:Key="L_SavingsHeader">POUPANÇA TOTAL</sys:String>
+    <sys:String x:Key="L_TopExpenseHeader">MAIOR GASTO</sys:String>
+    <sys:String x:Key="L_AccountHealthHeader">SAÚDE DA CONTA</sys:String>
+    <sys:String x:Key="L_InsightsHeader">INSIGHTS FINANCEIROS</sys:String>
+            <sys:String x:Key="L_Status_Deficit">Défice</sys:String>
+    <sys:String x:Key="L_Status_Minimum">Mínima</sys:String>
+    <sys:String x:Key="L_Status_Excellent">Excelente</sys:String>
+    <sys:String x:Key="L_Status_Risk">Em Risco</sys:String>
+    <sys:String x:Key="L_Status_Caution">Atenção</sys:String>
+    <sys:String x:Key="L_Status_Healthy">Saudável</sys:String>
+    <sys:String x:Key="L_NoTransactions">Ainda não existem transações suficientes.</sys:String>
+    <sys:String x:Key="L_IA_Calculating">A calcular análise financeira...</sys:String>
+            <sys:String x:Key="L_IA_Positive">[Análise {0}] No último período ({1}), o balanço foi de {2:N2}€. Continue assim!</sys:String>
+    <sys:String x:Key="L_IA_Negative">[Análise {0}] No último período ({1}), o balanço foi de {2:N2}€. Atenção aos gastos!</sys:String>
+            <sys:String x:Key="L_IncomesTitle">Gestão de Receitas</sys:String>
+    <sys:String x:Key="L_IncomesSubtitle">Regista e monitoriza os teus ganhos mensais</sys:String>
+    <sys:String x:Key="L_ExpensesTitle">Gestão de Despesas</sys:String>
+    <sys:String x:Key="L_ExpensesSubtitle">Controla os teus gastos e evita surpresas</sys:String>
+    <sys:String x:Key="L_DescProd">Descrição</sys:String>
+    <sys:String x:Key="L_Value">Valor (€)</sys:String>
+    <sys:String x:Key="L_Date">Data</sys:String>
+    <sys:String x:Key="L_Add">ADICIONAR</sys:String>
+    <sys:String x:Key="L_Category">Categoria</sys:String>
+            <sys:String x:Key="L_WishlistTitle">Wishlist (Lista de Desejos)</sys:String>
+    <sys:String x:Key="L_WishlistSubtitle">Planeia as tuas compras futuras sem sair do orçamento</sys:String>
+    <sys:String x:Key="L_ItemProduct">Item / Produto</sys:String>
+    <sys:String x:Key="L_EstPrice">Preço Est. (€)</sys:String>
+    <sys:String x:Key="L_Priority">Prioridade</sys:String>
+    <sys:String x:Key="L_Low">Baixa</sys:String>
+    <sys:String x:Key="L_Medium">Média</sys:String>
+    <sys:String x:Key="L_High">Alta</sys:String>
+    
+    <sys:String x:Key="L_WhereSpent">ONDE GASTOU?</sys:String>
+    <sys:String x:Key="L_RegisterExpense">REGISTAR GASTO</sys:String>
+    
+    <sys:String x:Key="L_CategoriesTitle">Gestão de Categorias</sys:String>
+    <sys:String x:Key="L_CategoriesSubtitle">Personalize a sua organização financeira com cores e ícones exclusivos</sys:String>
+    <sys:String x:Key="L_CategoryName">NOME DA CATEGORIA</sys:String>
+    <sys:String x:Key="L_ChooseColor">ESCOLHER COR DE DESTAQUE</sys:String>
+    <sys:String x:Key="L_Icon">ÍCONE</sys:String>
+    <sys:String x:Key="L_AddCategory">ADICIONAR CATEGORIA</sys:String>
+    
+    <sys:String x:Key="L_RegisterSubtitle">Começa a gerir o teu futuro hoje</sys:String>
+    <sys:String x:Key="L_ContinueGoogle">Continuar com Google</sys:String>
+            <sys:String x:Key="L_Weekly">Semanal</sys:String>
+    <sys:String x:Key="L_Monthly">Mensal</sys:String>
+    <sys:String x:Key="L_Yearly">Anual</sys:String>
+            <sys:String x:Key="L_Cat_Alimentação">Alimentação</sys:String>
+    <sys:String x:Key="L_Cat_Habitação">Habitação</sys:String>
+    <sys:String x:Key="L_Cat_Lazer">Lazer</sys:String>
+    <sys:String x:Key="L_Cat_Saúde">Saúde</sys:String>
+    <sys:String x:Key="L_Cat_Transportes">Transportes</sys:String>
+    <sys:String x:Key="L_Cat_Geral">Geral</sys:String>
+    <sys:String x:Key="L_Cat_Salário">Salário</sys:String>
+    
+</ResourceDictionary>
+
+
+
+
+
