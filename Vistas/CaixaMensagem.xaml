@@ -1,0 +1,87 @@
+<Window x:Class="DailyBudgetWPF.Vistas.CaixaMensagem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DailyBudget - Mensagem" Height="220" Width="420"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterScreen" ShowInTaskbar="False" ResizeMode="NoResize">
+
+    <Border CornerRadius="18" BorderThickness="1.5" ClipToBounds="True">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#141914" Offset="0"/>
+                <GradientStop Color="#0B0E0B" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Border.BorderBrush>
+            <SolidColorBrush x:Name="brdBordaCor" Color="#2ECC71"/>
+        </Border.BorderBrush>
+
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top bar / Title -->
+            <Grid Grid.Row="0" Margin="0,0,0,12">
+                <TextBlock x:Name="lblTitulo" Text="Aviso" Foreground="White" FontSize="16" FontWeight="Bold"/>
+                <Button Content="✕" HorizontalAlignment="Right" VerticalAlignment="Center" 
+                        Background="Transparent" BorderThickness="0" Foreground="#8E9E8E" 
+                        FontSize="14" FontWeight="Bold" Cursor="Hand" Click="Fechar_Click"/>
+            </Grid>
+
+            <!-- Content Area (Icon + Text) -->
+            <Grid Grid.Row="1" Margin="0,0,0,15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border x:Name="brdIcone" Width="50" Height="50" CornerRadius="25" VerticalAlignment="Center" Margin="5,0,15,0">
+                    <TextBlock x:Name="txtIcone" Text="ℹ️" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+
+                <TextBlock Grid.Column="1" x:Name="lblMensagem" Text="Mensagem" Foreground="#8E9E8E" 
+                           FontSize="14" TextWrapping="Wrap" VerticalAlignment="Center" LineHeight="20"/>
+            </Grid>
+
+            <!-- Bottom Actions -->
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                <!-- Cancel / No button -->
+                <Button x:Name="btnCancelar" Content="NÃO" Margin="0,0,10,0" Width="100" Height="38"
+                        Background="#34495E" Foreground="White" BorderThickness="0" Cursor="Hand" Click="Cancelar_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="border" Property="Background" Value="#2C3E50"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <!-- OK / Yes button -->
+                <Button x:Name="btnConfirmar" Content="OK" Width="100" Height="38"
+                        Background="#2ECC71" Foreground="White" BorderThickness="0" Cursor="Hand" Click="Confirmar_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="10">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="border" Property="Opacity" Value="0.9"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
