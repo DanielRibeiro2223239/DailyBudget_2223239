@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <!-- Excluir a pasta Entrega_PAP do build (cópia antiga para entrega) -->
+  <ItemGroup>
+    <Compile Remove="Entrega_PAP\**" />
+    <Page Remove="Entrega_PAP\**" />
+    <None Remove="Entrega_PAP\**" />
+    <Content Remove="Entrega_PAP\**" />
+    <EmbeddedResource Remove="Entrega_PAP\**" />
+  </ItemGroup>
+
+  <!-- Excluir a pasta do projeto API do build do WPF -->
+  <ItemGroup>
+    <Compile Remove="DailyBudget.API\**" />
+    <None Remove="DailyBudget.API\**" />
+    <Content Remove="DailyBudget.API\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.73.0" />
+    <PackageReference Include="Google.Apis.Oauth2.v2" Version="1.68.0.1869" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MailKit" Version="4.17.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
